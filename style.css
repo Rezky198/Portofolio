@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css?family=Mina:400,700");
+.whole {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: auto;
+  border: 3px aqua;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.logo {
+  line-height: 60px;
+  position: fixed;
+  float: left;
+  margin: 16px 46px;
+  color: #060655;
+  font-weight: bold;
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-family: Emblema One;
+  margin-top: 20px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
+}
+
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #4d4c52;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: #000;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #bdbcc2;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  border-width: 0 0 1px;
+  border-style: solid;
+}
+
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background: #000;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: rgb(52, 70, 238);
+  display: none;
+}
+
+@media (max-width: 786px) {
+  logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+  }
+
+  nav ul {
+    max-height: 0px;
+    background: #000;
+  }
+
+  nav.black ul {
+    background: #000;
+  }
+
+  showing {
+    max-height: 34em;
+  }
+
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+.d-flex img {
+  width: auto;
+  height: 200px;
+  margin-left: 610px;
+  top: 1%;
+}
+
+.wel {
+  margin-top: 150px;
+  color: #6e74ad;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-left: 80px;
+  font-style: italic;
+}
+
+.nama {
+  color: #f7ead8;
+  font-size: 49px;
+  font-weight: bold;
+  margin-left: 80px;
+}
+
+.header .hr {
+  width: 25%;
+  border: 0;
+  height: 5px;
+  background: white;
+  opacity: 1;
+  border-radius: 4px;
+  margin-left: 500px;
+}
+
+.seperator {
+  color: #8b93d6;
+  opacity: 1;
+  height: 10px;
+  border-radius: 4px;
+}
+
+.kiri {
+  float: left;
+  width: 18%;
+  height: 10px;
+  margin-left: 440px;
+  border-radius: 4px;
+}
+
+.kanan {
+  float: right;
+  width: 18%;
+  height: 10px;
+  margin-right: 353px;
+  border-radius: 4px;
+}
+
+.baris {
+  float: left;
+  color: #f7ead8;
+  font-size: 25px;
+  margin-left: 475px;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+.baris2 {
+  color: #f7ead8;
+  font-size: 25px;
+  float: right;
+  margin-right: 425px;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.title {
+  letter-spacing: 4px;
+  color: #2434c4;
+  font-size: 3em;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+
+.custom-card {
+  position: relative;
+  margin-bottom: -3px;
+  box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.085);
+  will-change: box-shadow;
+  transition: box-shadow 0.3s ease;
+}
+.custom-card:hover {
+  box-shadow: 0px 13px 38px 0px rgba(0, 0, 0, 0.15);
+}
+.custom-card .card-body {
+  padding-top: 65px;
+  height: 50%;
+}
+.custom-card .card-cover {
+  position: relative;
+  background: none no-repeat center center/cover;
+  height: 140px;
+}
+.custom-card .card-cover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+.custom-card .circle-image {
+  position: absolute;
+  background: none no-repeat center center/cover;
+  width: 90px;
+  height: 90px;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+.custom-card .circle-image:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0 0 0 6px #fff;
+  width: calc( 100% + 10px );
+  height: calc( 100% + 10px );
+  border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .custom-card .card-cover {
+    background: none;
+    height: 0;
+  }
+  .custom-card .circle-image {
+    position: relative;
+    bottom: inherit;
+    top: 20px;
+    left: 10px;
+    transform: none;
+  }
+  .custom-card .circle-image:before {
+    box-shadow: none;
+  }
+  .custom-card .card-body {
+    padding-top: 20px;
+    padding-left: 120px;
+  }
+}
+.custom-card .w3-container li {
+  color: #fff;
+}
+.custom-card .cards {
+  min-height: 100%;
+  padding: 20px 20px 40px 20px;
+  background-color: #f5f5f5;
+}
+.progress-value {
+  animation: load 17s normal forwards;
+  background: orange;
+  height: 55px;
+  width: 0;
+}
+.progress-value2{
+  animation: load2 17s normal forwards;
+  background: rgb(44, 78, 233);
+  height: 55px;
+  width: 0;
+}
+.progress-value3{
+  animation: load3 17s normal forwards;
+  background: cyan;
+  height: 55px;
+  width: 0;
+}
+.progress-value4
+{
+  animation: load4 17s normal forwards;
+  background: orange;
+  height: 55px;
+  width: 0;
+}
+
+.progress-value5{
+  animation: load5 17s normal forwards;
+  background:rgb(44, 78, 233) ;
+  height: 55px;
+  width: 0;
+}
+
+.progress-value6{
+  animation: load6 17s normal forwards;
+  background: cyan;
+  height: 55px;
+  width: 0;
+}
+@keyframes load {
+  0% { width: 0; }
+  100% { width: 85%; }
+}
+
+@keyframes load2 {
+  0% { width: 0; }
+  100% { width: 90%; }
+}
+
+@keyframes load3 {
+  0% { width: 0; }
+  100% { width: 75%; }
+}
+
+@keyframes load4 {
+  0% { width: 0; }
+  100% { width: 70%; }
+}
+
+@keyframes load5 {
+  0% { width: 0; }
+  100% { width: 75%; }
+}
+
+@keyframes load6 {
+  0% { width: 0; }
+  100% { width: 60%; }
+}
+
+.column{
+  float:left;
+  width: 33.33%;
+  padding:5px;
+}
+
+.row::after{
+content: "";
+clear: both;
+display: table;
+}
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.img{
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+.skil{
+  font-style: inherit;
+  font-weight: bold;
+  color: #3b62e4;
+  letter-spacing: 3m;
+  font-size: 30px;
+}
